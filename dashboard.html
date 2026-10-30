@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOS - Bosh Sahifa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    
+    <!-- Yuqori Header -->
+    <header class="dash-header">
+      <div class="logo-area">
+        <div class="mini-logo">M</div>
+        <div class="logo-texts">
+          <span class="app-title">LifeOS</span>
+          <span class="app-sub">Rivojlanish</span>
+        </div>
+      </div>
+      <h2 class="page-name">Dashboard</h2>
+      <div class="header-actions">
+        <a href="#" class="notification-btn"><i class="fa-regular fa-bell"></i></a>
+        <div class="user-avatar-mini">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="User">
+        </div>
+      </div>
+    </header>
+
+    <!-- Salomlashuv paneli -->
+    <div class="welcome-bar">
+      <div class="user-greeting">
+        <h3>Xayrli tong, Jasur! 🌅</h3>
+        <p>Dushanba, 24-Mart • Intizom kuni</p>
+      </div>
+      <div class="streak-badge-top">
+        <i class="fa-solid fa-fire"></i> 18 kun
+      </div>
+    </div>
+
+    <!-- Kun hikmati kartasi -->
+    <div class="quote-banner">
+      <div class="qb-top">
+        <span class="qb-tag"><i class="fa-solid fa-lightbulb"></i> KUN HIKMATI</span>
+        <div class="qb-actions">
+          <i class="fa-regular fa-bookmark"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <p class="qb-quote">
+        "Har kuni 1% yaxshiroq bo'lish — yil oxirida 37 barobar o'sish degani."
+      </p>
+      <div class="qb-author">— James Clear, "Atom Odatlar"</div>
+    </div>
+
+    <!-- Bugungi umumiy natija (Aylanali progress) -->
+    <div class="daily-result-card">
+      <div class="dr-header">
+        <span class="dr-title">KUNLIK REJA</span>
+        <span class="dr-status-badge">ZO'R NATIJA</span>
+      </div>
+      <h4 class="dr-main-title">Bugungi umumiy natija</h4>
+
+      <div class="circle-progress-box">
+        <div class="circle-outer">
+          <div class="circle-inner">
+            <span class="c-percent">78%</span>
+            <span class="c-sub">7 / 9 vazifa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kichik natijalar -->
+      <div class="sub-stats-grid">
+        <div class="sub-stat-item">
+          <span class="dot green"></span>
+          <span class="ss-label">Odatlar</span>
+          <strong>4 / 4</strong>
+        </div>
+        <div class="sub-stat-item">
+          <span class="dot purple"></span>
+          <span class="ss-label">Muhim</span>
+          <strong>2 / 3</strong>
+        </div>
+        <div class="sub-stat-item">
+          <span class="dot orange"></span>
+          <span class="ss-label">O'qish</span>
+          <strong>1 / 2</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tezkor amallar -->
+    <div class="quick-actions-section">
+      <div class="section-title-row">
+        <h4>Tezkor amallar</h4>
+        <a href="#">Barchasi</a>
+      </div>
+      <div class="action-buttons-scroll">
+        <button class="act-btn primary">
+          <i class="fa-solid fa-plus"></i> Yangi vazifa
+        </button>
+        <button class="act-btn">
+          <i class="fa-solid fa-book"></i> Kitob o'qish
+        </button>
+        <button class="act-btn">
+          <i class="fa-solid fa-person-running"></i> Sport
+        </button>
+      </div>
+    </div>
+
+    <!-- Bugungi asosiy reja -->
+    <div class="main-tasks-section">
+      <div class="section-title-row">
+        <h4>Bugungi asosiy reja <span class="count-pill">4 ta</span></h4>
+        <a href="planner.html">Kun tartibi <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="dash-tasks-list">
+        
+        <div class="d-task-item completed">
+          <div class="dt-checkbox checked"><i class="fa-solid fa-check"></i></div>
+          <div class="dt-info">
+            <h5>Ertalabki yugurish va badantarbiya</h5>
+            <span class="dt-meta"><i class="fa-regular fa-clock"></i> 07:00 • 30 daqiqa</span>
+          </div>
+          <span class="dt-tag green">Bajarildi</span>
+        </div>
+
+        <div class="d-task-item completed">
+          <div class="dt-checkbox checked"><i class="fa-solid fa-check"></i></div>
+          <div class="dt-info">
+            <h5>20 sahifa kitob o'qish ("100 mingga diqqat...")</h5>
+            <span class="dt-meta"><i class="fa-regular fa-clock"></i> 08:30 • 20 daqiqa</span>
+          </div>
+          <span class="dt-tag green">Bajarildi</span>
+        </div>
+
+        <div class="d-task-item">
+          <div class="dt-checkbox"></div>
+          <div class="dt-info">
+            <h5>LifeOS loyihasi UI/UX tekshiruvi</h5>
+            <span class="dt-meta"><i class="fa-regular fa-clock"></i> 14:00 • 90 daqiqa</span>
+          </div>
+          <span class="dt-tag blue">Jarayonda</span>
+        </div>
+
+        <div class="d-task-item">
+          <div class="dt-checkbox"></div>
+          <div class="dt-info">
+            <h5>Ingliz tili so'z boyligi takrorlash</h5>
+            <span class="dt-meta"><i class="fa-regular fa-clock"></i> 21:30 • 20 daqiqa</span>
+          </div>
+          <span class="dt-tag purple">Kutilmoqda</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Ko'rsatkichlar & Maqsadlar -->
+    <div class="metrics-goals-section">
+      <div class="section-title-row">
+        <h4>Ko'rsatkichlar & Maqsadlar</h4>
+        <a href="statistics.html">Tahlil <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+
+      <div class="metrics-two-col">
+        <div class="m-box">
+          <span class="mb-label">UZLUKSIZ INTIZOM <i class="fa-solid fa-fire icon-orange"></i></span>
+          <h3 class="mb-val">18 <span>kun</span></h3>
+          <span class="mb-sub">Rekord natija: 24 kun</span>
+        </div>
+        <div class="m-box">
+          <span class="mb-label">HAFTALIK SUR'AT <i class="fa-solid fa-chart-line icon-green"></i></span>
+          <h3 class="mb-val">85% <span>unum</span></h3>
+          <div class="m-progress-bg"><div class="m-progress-fill" style="width: 85%;"></div></div>
+        </div>
+      </div>
+
+      <!-- Katta maqsad vidjeti -->
+      <div class="big-goal-widget">
+        <div class="bgw-top">
+          <span class="bgw-icon"><i class="fa-solid fa-award"></i></span>
+          <div class="bgw-texts">
+            <span class="bgw-sub">1-yillik strategik maqsad</span>
+            <h5>IELTS 8.0 & Xalqaro IT Sertifikat</h5>
+          </div>
+          <span class="bgw-percent">64%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" style="width: 64%;"></div>
+        </div>
+        <div class="bgw-bottom">
+          <span>Qolgan vaqt: 8 oy 12 kun</span>
+          <a href="goals.html">Barcha maqsadlar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Yakuniy kichik banner -->
+      <div class="finish-banner">
+        <div class="fb-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="fb-texts">
+          <strong>Bugun mukammal kun bo'lishi mumkin!</strong>
+          <p>Yana 2 ta vazifani bajarsangiz, 100% natijaga erishasiz.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pastki Navigatsiya Menyusi -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>Bosh sahifa</span>
+      </a>
+      <a href="planner.html" class="nav-item">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Kun tartibi</span>
+      </a>
+      <a href="#" class="nav-item center-add">
+        <div class="add-circle"><i class="fa-solid fa-plus"></i></div>
+      </a>
+      <a href="goals.html" class="nav-item">
+        <i class="fa-solid fa-flag"></i>
+        <span>Maqsadlar</span>
+      </a>
+      <a href="statistics.html" class="nav-item">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Tahlil</span>
+      </a>
+      <a href="knowledge.html" class="nav-item">
+        <i class="fa-solid fa-book-open"></i>
+        <span>Bilimlar</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>

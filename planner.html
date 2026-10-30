@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOS - Kunlik Rejalar (Planner)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="planner.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="planner-container">
+    
+    <!-- Yuqori Header -->
+    <header class="planner-header">
+      <div class="logo-area">
+        <div class="mini-logo">M</div>
+        <div class="logo-texts">
+          <span class="app-title">LifeOS</span>
+          <span class="app-sub">Rivojlanish</span>
+        </div>
+      </div>
+      <h2 class="page-name">Planner</h2>
+      <div class="header-actions">
+        <a href="#" class="notification-btn"><i class="fa-regular fa-bell"></i></a>
+        <div class="user-avatar-mini">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="User">
+        </div>
+      </div>
+    </header>
+
+    <!-- Kalendar Sana paneli -->
+    <div class="calendar-nav-card">
+      <div class="calendar-top-row">
+        <div class="month-selector">
+          <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="current-month"><i class="fa-regular fa-calendar"></i> Mart 2025</span>
+          <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <a href="#" class="today-btn">Bugun</a>
+      </div>
+
+      <div class="days-row">
+        <div class="day-item">
+          <span class="d-name">Ch</span>
+          <span class="d-num">19</span>
+          <span class="d-dot red"></span>
+        </div>
+        <div class="day-item">
+          <span class="d-name">Pa</span>
+          <span class="d-num">20</span>
+          <span class="d-dot green"></span>
+        </div>
+        <div class="day-item">
+          <span class="d-name">Ju</span>
+          <span class="d-num">21</span>
+          <span class="d-dot orange"></span>
+        </div>
+        <div class="day-item">
+          <span class="d-name">Sh</span>
+          <span class="d-num">22</span>
+          <span class="d-dot orange"></span>
+        </div>
+        <div class="day-item">
+          <span class="d-name">Ya</span>
+          <span class="d-num">23</span>
+          <span class="d-dot green"></span>
+        </div>
+        <div class="day-item active">
+          <span class="d-name">Bu</span>
+          <span class="d-num">24</span>
+          <span class="d-dot green"></span>
+        </div>
+        <div class="day-item">
+          <span class="d-name">Se</span>
+          <span class="d-num">25</span>
+          <span class="d-dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kunlik statistika progress kartasi -->
+    <div class="progress-card">
+      <div class="prog-info">
+        <div>
+          <h3>24-Mart, Bugungi reja[cite: 3]</h3>
+          <p>9 ta rejalashtirilgan vazifa[cite: 3]</p>
+        </div>
+        <div class="prog-percent">
+          <span class="p-num">78%</span>
+          <span class="p-label">samaradorlik[cite: 3]</span>
+        </div>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" style="width: 78%;"></div>
+      </div>
+      <div class="streak-row">
+        <span class="streak-text"><i class="fa-solid fa-fire"></i> Ketma-ketlik: 14 kun[cite: 3]</span>
+        <span class="streak-badge">+50 ball qo'shildi[cite: 3]</span>
+      </div>
+    </div>
+
+    <!-- Filter Tablar -->
+    <div class="filter-tabs">
+      <a href="#" class="f-tab active">Barchasi[cite: 3]</a>
+      <a href="#" class="f-tab">Ertalab</a>
+      <a href="#" class="f-tab">Kunduzi</a>
+      <a href="#" class="f-tab">Kechqurun</a>
+      <a href="#" class="f-tab">Odatlar</a>
+    </div>
+
+    <!-- Vazifalar ro'yxati -->
+    <div class="tasks-list">
+      
+      <!-- 1-vazifa (Bajarilgan) -->
+      <div class="task-card completed">
+        <div class="task-left">
+          <div class="checkbox-box checked"><i class="fa-solid fa-check"></i></div>
+          <div class="task-content">
+            <h4>💧 2L suv ichish[cite: 3]</h4>
+            <div class="task-meta">
+              <span class="badge-green">Bajarildi</span>
+              <span class="time"><i class="fa-regular fa-clock"></i> 08:30[cite: 3]</span>
+            </div>
+          </div>
+        </div>
+        <div class="task-right">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+      </div>
+
+      <!-- 2-vazifa (Bajarilgan) -->
+      <div class="task-card completed">
+        <div class="task-left">
+          <div class="checkbox-box checked"><i class="fa-solid fa-check"></i></div>
+          <div class="task-content">
+            <h4>🏃‍♂️ 5 km yugurish[cite: 3]</h4>
+            <div class="task-meta">
+              <span class="badge-blue">Sport/Tana</span>
+              <span class="time"><i class="fa-regular fa-clock"></i> 07:00[cite: 3]</span>
+            </div>
+          </div>
+        </div>
+        <div class="task-right">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+      </div>
+
+      <!-- 3-vazifa (Bajarilmoqda) -->
+      <div class="task-card">
+        <div class="task-left">
+          <div class="checkbox-box"></div>
+          <div class="task-content">
+            <h4>💻 UI dizayn tizimini yakunlash[cite: 3]</h4>
+            <div class="task-meta">
+              <span class="badge-purple">Karyera</span>
+              <span class="badge-priority">⚠️ Yuqori muhimlik[cite: 3]</span>
+              <span class="time"><i class="fa-regular fa-clock"></i> 11:30[cite: 3]</span>
+            </div>
+          </div>
+        </div>
+        <div class="task-right">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+
+      <!-- 4-vazifa -->
+      <div class="task-card">
+        <div class="task-left">
+          <div class="checkbox-box"></div>
+          <div class="task-content">
+            <h4>📖 30 daqiqa kitob mutolaasi[cite: 3]</h4>
+            <div class="task-meta">
+              <span class="badge-orange">Rivojlanish</span>
+              <span class="time"><i class="fa-regular fa-clock"></i> 21:00[cite: 3]</span>
+            </div>
+          </div>
+        </div>
+        <div class="task-right">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+
+      <!-- 5-vazifa -->
+      <div class="task-card">
+        <div class="task-left">
+          <div class="checkbox-box"></div>
+          <div class="task-content">
+            <h4>🧘 Kechki meditatsiya va nafas[cite: 3]</h4>
+            <div class="task-meta">
+              <span class="badge-teal">Texnika</span>
+              <span class="time"><i class="fa-regular fa-clock"></i> 22:30[cite: 3]</span>
+            </div>
+          </div>
+        </div>
+        <div class="task-right">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Haftalik barqarorlik -->
+    <div class="weekly-stability-card">
+      <div class="ws-header">
+        <h4><i class="fa-solid fa-chart-line"></i> Haftalik barqarorlik[cite: 3]</h4>
+        <span class="ws-growth">+18% o'sish[cite: 3]</span>
+      </div>
+      <div class="ws-days-grid">
+        <span>Ch</span><span>Pa</span><span>Ju</span><span>Sh</span><span>Ya</span><span>Du</span><span>Se</span>
+      </div>
+    </div>
+
+    <!-- Yangi vazifa yozish inputi -->
+    <div class="quick-add-task">
+      <div class="qa-top">
+        <i class="fa-regular fa-pen-to-square"></i>
+        <input type="text" placeholder="Yangi vazifa yozing...">
+        <button class="qa-plus"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="qa-bottom">
+        <span class="tag-pill"><i class="fa-solid fa-flag"></i> Muhimlik</span>
+        <span class="tag-pill"><i class="fa-regular fa-clock"></i> Vaqt</span>
+        <span class="qa-right-link">Tezkor sanash</span>
+      </div>
+    </div>
+
+    <!-- Pastki Navigatsiya Menyusi (Bottom Navigation) -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Bosh sahifa</span>
+      </a>
+      <a href="planner.html" class="nav-item active">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Kun tartibi</span>
+      </a>
+      <a href="#" class="nav-item center-add">
+        <div class="add-circle"><i class="fa-solid fa-plus"></i></div>
+      </a>
+      <a href="goals.html" class="nav-item">
+        <i class="fa-solid fa-flag"></i>
+        <span>Maqsadlar</span>
+      </a>
+      <a href="statistics.html" class="nav-item">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Tahlil</span>
+      </a>
+      <a href="knowledge.html" class="nav-item">
+        <i class="fa-solid fa-book-open"></i>
+        <span>Bilimlar</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>

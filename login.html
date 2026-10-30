@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOS - Kirish</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome ikonkalari uchun -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="login-container">
+    
+    <!-- Yuqori panel: Badge va Tillar -->
+    <div class="top-bar">
+      <span class="badge"><i class="fa-solid fa-circle"></i> Intizom & Rivoj</span>
+      <div class="lang-switch">
+        <span class="lang active">UZ</span>
+        <span class="lang">EN</span>
+      </div>
+    </div>
+
+    <!-- Logo va Sarlavha -->
+    <div class="header-section">
+      <div class="logo-box">
+        <span class="logo-m">M</span>
+        <span class="verified-icon"><i class="fa-solid fa-check"></i></span>
+      </div>
+      <h1 class="brand-name">LifeOS <span class="pro-tag">PRO</span></h1>
+      <h2 class="welcome-title">Xush kelibsiz!</h2>
+      <p class="subtitle">Shaxsiy rivojlanish sari yangi qadam. Har bir kunlik odat — buyuk natija poydevori.</p>
+    </div>
+
+    <!-- Forma kartasi -->
+    <div class="form-card">
+      
+      <!-- Tab tugmalari -->
+      <div class="tab-group">
+        <a href="login.html" class="tab-btn active"><i class="fa-solid fa-right-to-bracket"></i> Kirish</a>
+        <a href="register.html" class="tab-btn"><i class="fa-solid fa-user-plus"></i> Ro'yxatdan o'tish</a>
+      </div>
+
+      <!-- Forma -->
+      <form action="dashboard.html">
+        
+        <!-- Input: Email -->
+        <div class="input-group">
+          <label for="email">Elektron pochta</label>
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope icon"></i>
+            <input type="email" id="email" placeholder="nomingiz@domen.uz" required>
+          </div>
+        </div>
+
+        <!-- Input: Parol -->
+        <div class="input-group">
+          <label for="password">Maxfiy so'z</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" id="password" placeholder="••••••••••••" required>
+            <i class="fa-regular fa-eye eye-icon"></i>
+          </div>
+        </div>
+
+        <!-- Optionlar: Eslab qolish & Parolni unutdingizmi -->
+        <div class="form-options">
+          <label class="checkbox-container">
+            <input type="checkbox" checked>
+            <span class="checkmark"></span>
+            Eslab qolish
+          </label>
+          <a href="#" class="forgot-link">Parolni unutdingizmi?</a>
+        </div>
+
+        <!-- Kirish tugmasi -->
+        <a href="dashboard.html" class="submit-btn">
+          LifeOS ga kirish <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </form>
+
+      <!-- Bo'lim ajratuvchi -->
+      <div class="divider">
+        <span>YOKI BU ORQALI</span>
+      </div>
+
+      <!-- Social loginlar -->
+      <div class="social-login">
+        <a href="dashboard.html" class="social-btn google-btn">
+          <i class="fa-brands fa-google"></i> Google orqali kirish
+        </a>
+        <div class="social-row">
+          <a href="dashboard.html" class="social-btn sub-btn">
+            <i class="fa-brands fa-telegram"></i> Telegram
+          </a>
+          <a href="dashboard.html" class="social-btn sub-btn">
+            <i class="fa-brands fa-apple"></i> Apple ID
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pastki sahifa o'tish matni -->
+    <p class="bottom-register-text">
+      Hisobingiz yo'qmi? <a href="register.html">Hoziroq ro'yxatdan o'ting</a>
+    </p>
+
+    <!-- Statistika kartasi -->
+    <div class="stats-card">
+      <div class="avatar-group">
+        <span class="avatar av-1">SH</span>
+        <span class="avatar av-2">AZ</span>
+        <span class="avatar av-3">MR</span>
+      </div>
+      <div class="stats-text">
+        <strong>12,400+ faol foydalanuvchilar</strong>
+        <p>Bugun 84% maqsadlar bajarildi</p>
+      </div>
+      <i class="fa-solid fa-chart-line stats-icon"></i>
+    </div>
+
+  </div>
+
+</body>
+</html>

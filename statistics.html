@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeOS - Tahlil va Statistika</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="statistics.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="stats-container">
+    
+    <!-- Шапка страницы -->
+    <header class="stats-header">
+      <div class="logo-area">
+        <div class="mini-logo">M</div>
+        <div class="logo-texts">
+          <span class="app-title">LifeOS</span>
+          <span class="app-sub">Rivojlanish</span>
+        </div>
+      </div>
+      <h2 class="page-name">Analytics</h2>
+      <div class="header-actions">
+        <a href="#" class="notification-btn"><i class="fa-regular fa-bell"></i></a>
+        <div class="user-avatar-mini">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="User">
+        </div>
+      </div>
+    </header>
+
+    <!-- Переключатель периода (Haftalik / Oylik / Yillik) -->
+    <div class="period-tabs">
+      <a href="#" class="p-tab active">Haftalik</a>
+      <a href="#" class="p-tab">Oylik</a>
+      <a href="#" class="p-tab">Yillik</a>
+    </div>
+
+    <!-- Карточка серии дней (Davomiylik zanjiri) -->
+    <div class="streak-card">
+      <div class="streak-icon-box">
+        <i class="fa-solid fa-fire"></i>
+      </div>
+      <div class="streak-details">
+        <span class="streak-label">DAVOMIYLIK ZANJIRI</span>
+        <div class="streak-val-row">
+          <h3 class="streak-count">18 Kun</h3>
+          <span class="top-badge"><i class="fa-solid fa-arrow-up"></i> Top 5%</span>
+        </div>
+        <p class="streak-record">Eng yuqori rekord: 24 kun</p>
+      </div>
+    </div>
+
+    <!-- Метрики (Средняя продуктивность и Время фокуса) -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="m-header">
+          <span class="m-icon green"><i class="fa-solid fa-chart-line"></i></span>
+          <span class="m-change positive">+15%</span>
+        </div>
+        <span class="m-title">O'rtacha unumdorlik</span>
+        <h3 class="m-value">88%</h3>
+        <p class="m-sub">o'tgan haftaga nisbatan</p>
+      </div>
+
+      <div class="metric-card">
+        <div class="m-header">
+          <span class="m-icon purple"><i class="fa-solid fa-bullseye"></i></span>
+          <span class="m-tag">Chala-yarim</span>
+        </div>
+        <span class="m-title">Diqqat vaqti</span>
+        <h3 class="m-value">42 soat</h3>
+        <p class="m-sub">Muvaffaqiyatli seanslar</p>
+      </div>
+    </div>
+
+    <!-- График дневной продуктивности -->
+    <div class="chart-card">
+      <div class="chart-header">
+        <div>
+          <h4>Kunlik samaradorlik ritmi</h4>
+          <p>Dushanba — Yakshanba ko'rsatkichlari</p>
+        </div>
+        <span class="avg-pill">O'rtacha 86.4%</span>
+      </div>
+
+      <!-- Столбчатый график -->
+      <div class="bars-container">
+        <div class="bar-col">
+          <span class="bar-val">90%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 80%;"></div></div>
+          <span class="bar-day">Du</span>
+        </div>
+        <div class="bar-col">
+          <span class="bar-val">85%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 75%;"></div></div>
+          <span class="bar-day">Se</span>
+        </div>
+        <div class="bar-col">
+          <span class="bar-val">92%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 85%;"></div></div>
+          <span class="bar-day">Ch</span>
+        </div>
+        <div class="bar-col">
+          <span class="bar-val">80%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 70%;"></div></div>
+          <span class="bar-day">Pa</span>
+        </div>
+        <div class="bar-col active">
+          <span class="bar-val">98%</span>
+          <div class="bar-wrapper"><div class="bar-fill dark" style="height: 95%;"></div></div>
+          <span class="bar-day">Ju</span>
+        </div>
+        <div class="bar-col">
+          <span class="bar-val">70%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 60%;"></div></div>
+          <span class="bar-day">Sh</span>
+        </div>
+        <div class="bar-col">
+          <span class="bar-val">85%</span>
+          <div class="bar-wrapper"><div class="bar-fill" style="height: 75%;"></div></div>
+          <span class="bar-day">Ya</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Месячная матрица дисциплины (Календарь-сетка) -->
+    <div class="matrix-card">
+      <div class="matrix-header">
+        <div>
+          <h4><i class="fa-solid fa-border-all"></i> Oylik intizom matritsasi</h4>
+          <p>Kundalik odatlar va vazifalarning bajarilish darajasi</p>
+        </div>
+        <span class="matrix-tag">O'tgan 30 kun</span>
+      </div>
+
+      <div class="matrix-grid">
+        <div class="m-cell level-4">1</div>
+        <div class="m-cell level-4">2</div>
+        <div class="m-cell level-2">3</div>
+        <div class="m-cell level-4">4</div>
+        <div class="m-cell level-4">5</div>
+        <div class="m-cell level-0">6</div>
+        <div class="m-cell level-4">7</div>
+        <div class="m-cell level-4">8</div>
+        <div class="m-cell level-4">9</div>
+        <div class="m-cell level-4">10</div>
+        <div class="m-cell level-2">11</div>
+        <div class="m-cell level-4">12</div>
+        <div class="m-cell level-4">13</div>
+        <div class="m-cell level-4">14</div>
+        <div class="m-cell level-4">15</div>
+        <div class="m-cell level-4">16</div>
+        <div class="m-cell level-4">17</div>
+        <div class="m-cell level-2">18</div>
+        <div class="m-cell level-4">19</div>
+        <div class="m-cell level-4">20</div>
+        <div class="m-cell level-0">21</div>
+        <div class="m-cell level-4">22</div>
+        <div class="m-cell level-4">23</div>
+        <div class="m-cell level-4">24</div>
+        <div class="m-cell level-4">25</div>
+        <div class="m-cell level-4">26</div>
+        <div class="m-cell level-4">27</div>
+        <div class="m-cell level-4">28</div>
+        <div class="m-cell level-2">29</div>
+        <div class="m-cell today">Bugun</div>
+      </div>
+
+      <div class="matrix-legend">
+        <span>Passiv</span>
+        <div class="legend-dots">
+          <span class="dot l-0"></span>
+          <span class="dot l-1"></span>
+          <span class="dot l-2"></span>
+          <span class="dot l-3"></span>
+        </div>
+        <span>100% Bajarildi</span>
+      </div>
+    </div>
+
+    <!-- Баланс сфер (Sohalar balansi) -->
+    <div class="spheres-card">
+      <div class="spheres-header">
+        <h4>Sohalar balansi</h4>
+        <span class="badge-light">Barqaror</span>
+      </div>
+
+      <div class="sphere-item">
+        <div class="s-info">
+          <span><i class="fa-solid fa-briefcase"></i> Karyera va Ish</span>
+          <strong>92%</strong>
+        </div>
+        <div class="s-bar-bg"><div class="s-bar-fill dark" style="width: 92%;"></div></div>
+      </div>
+
+      <div class="sphere-item">
+        <div class="s-info">
+          <span><i class="fa-solid fa-heart-pulse"></i> Sog'liq va Sport</span>
+          <strong>80%</strong>
+        </div>
+        <div class="s-bar-bg"><div class="s-bar-fill green" style="width: 80%;"></div></div>
+      </div>
+
+      <div class="sphere-item">
+        <div class="s-info">
+          <span><i class="fa-solid fa-book"></i> O'z ustida ishlash</span>
+          <strong>75%</strong>
+        </div>
+        <div class="s-bar-bg"><div class="s-bar-fill orange" style="width: 75%;"></div></div>
+      </div>
+
+      <div class="sphere-item">
+        <div class="s-info">
+          <span><i class="fa-solid fa-wallet"></i> Moliyaviy reja</span>
+          <strong>84%</strong>
+        </div>
+        <div class="s-bar-bg"><div class="s-bar-fill teal" style="width: 84%;"></div></div>
+      </div>
+    </div>
+
+    <!-- AI Рекомендация (AI Rivojlanish tavsiyasi) -->
+    <div class="ai-recommendation-card">
+      <div class="ai-header">
+        <div class="ai-title">
+          <i class="fa-solid fa-robot"></i>
+          <span>AI Rivojlanish tavsiyasi</span>
+        </div>
+        <span class="ai-tag">Tavsiya</span>
+      </div>
+      <p class="ai-text">
+        "Siz ertalab soat 8:00 dan 11:00 gacha eng unumli ishlamoqdasiz. <strong>Chorshanba</strong> kunlari esa eng yuqori diqqat qayd etilgan."
+      </p>
+      <a href="#" class="ai-btn">Rejani moslashtirish <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <!-- Нижнее меню навигации (Bottom Navigation) -->
+    <nav class="bottom-nav">
+      <a href="dashboard.html" class="nav-item">
+        <i class="fa-solid fa-house"></i>
+        <span>Bosh sahifa</span>
+      </a>
+      <a href="planner.html" class="nav-item">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Kun tartibi</span>
+      </a>
+      <a href="#" class="nav-item center-add">
+        <div class="add-circle"><i class="fa-solid fa-plus"></i></div>
+      </a>
+      <a href="goals.html" class="nav-item">
+        <i class="fa-solid fa-flag"></i>
+        <span>Maqsadlar</span>
+      </a>
+      <a href="statistics.html" class="nav-item active">
+        <i class="fa-solid fa-chart-pie"></i>
+        <span>Tahlil</span>
+      </a>
+      <a href="knowledge.html" class="nav-item">
+        <i class="fa-solid fa-book-open"></i>
+        <span>Bilimlar</span>
+      </a>
+    </nav>
+
+  </div>
+
+</body>
+</html>
